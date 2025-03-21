@@ -131,18 +131,19 @@ int parentesisBalanceados(char *cadena) {
    else{
       for(int i = 0; i < (strlen(cadena)); i++)
       {
-         push(pAux, cadena[i]);
+         push(P1, cadena[i]);
       }
       for(int i = 0; i < (strlen(cadena)/2); i++)
       {
-         push(P1, top(pAux));
-         pop(pAux);
+         push(pAux, top(P1));
+         pop(P1);
       }
       while(top(pAux) != NULL)
       {
          push(P2, top(pAux));
          pop(pAux);
       }
+      free(pAux);
       while(top(P2) != NULL)
       {
          char* Char1 = top(P1);
