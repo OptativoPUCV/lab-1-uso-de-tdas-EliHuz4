@@ -128,3 +128,38 @@ stack.h:11:6: note: expected 'void *' but argument is of type 'char'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 24a3169
+Fri, Mar 21, 2025  8:38:42 PM: 
+ exercises.c | 18 ++++++++----------
+ 1 file changed, 8 insertions(+), 10 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:21: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+          push(pAux, cadena[i]);
+                     ^~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'char'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:150:19: error: comparison between pointer and integer [-Werror]
+          if(Char1 == '(' && Char2 != ')') return 0;
+                   ^~
+exercises.c:150:35: error: comparison between pointer and integer [-Werror]
+          if(Char1 == '(' && Char2 != ')') return 0;
+                                   ^~
+exercises.c:151:19: error: comparison between pointer and integer [-Werror]
+          if(Char1 == '{' && Char2 != '}') return 0;
+                   ^~
+exercises.c:151:35: error: comparison between pointer and integer [-Werror]
+          if(Char1 == '{' && Char2 != '}') return 0;
+                                   ^~
+exercises.c:152:19: error: comparison between pointer and integer [-Werror]
+          if(Char1 == '[' && Char2 != ']') return 0;
+                   ^~
+exercises.c:152:35: error: comparison between pointer and integer [-Werror]
+          if(Char1 == '[' && Char2 != ']') return 0;
+                                   ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+1f54a85
