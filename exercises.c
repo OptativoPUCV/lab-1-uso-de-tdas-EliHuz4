@@ -142,7 +142,7 @@ int parentesisBalanceados(char *cadena) {
          push(P2, top(pAux));
          pop(pAux);
       }
-      while(top(P1) != NULL)
+      while(top(P2) != NULL)
       {
          if(top(P1) != top(P2)) return 0;
          pop(P1);
