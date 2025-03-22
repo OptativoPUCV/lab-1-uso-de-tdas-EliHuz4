@@ -209,3 +209,14 @@ exercises.c:132:12: error: assignment makes pointer from integer without a cast 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a6a68fd
+Fri, Mar 21, 2025  9:11:19 PM: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:132:12: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+          c = cadena[i];
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+227b722
