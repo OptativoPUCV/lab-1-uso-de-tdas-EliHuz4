@@ -133,7 +133,7 @@ int parentesisBalanceados(char *cadena) {
       else if(cadena[i] == ')' || cadena[i] == '}' || cadena[i] == ']')
       {
          char* Parent = pop(P1);
-         if(cadena[i] == ')' && *Parent != '(' || cadena[i] == '}' && *Parent != '{' || cadena[i] == ']' && *Parent != '['){
+         if((cadena[i] == ')' && *Parent != '(') || (cadena[i] == '}' && *Parent != '{') || (cadena[i] == ']' && *Parent != '[')){
             free(Parent);
             free(P1);
             return 0;
