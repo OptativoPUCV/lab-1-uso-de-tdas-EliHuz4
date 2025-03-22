@@ -220,3 +220,17 @@ exercises.c:132:12: error: assignment makes pointer from integer without a cast 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 227b722
+Fri, Mar 21, 2025  9:16:55 PM: 
+ exercises.c | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:141:30: error: suggest parentheses around '&&' within '||' [-Werror=parentheses]
+          if(cadena[i] == ')' && *Parent != '(' || cadena[i] == '}' && *Parent != '{' || cadena[i] == ']' && *Parent != '['){
+             ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+exercises.c:141:106: error: suggest parentheses around '&&' within '||' [-Werror=parentheses]
+          if(cadena[i] == ')' && *Parent != '(' || cadena[i] == '}' && *Parent != '{' || cadena[i] == ']' && *Parent != '['){
+                                                                                         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2019906
