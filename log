@@ -198,3 +198,14 @@ exercises.c:153:35: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5e42898
+Fri, Mar 21, 2025  9:10:16 PM: 
+ exercises.c | 42 ++++++++++++++----------------------------
+ 1 file changed, 14 insertions(+), 28 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:132:12: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+          c = cadena[i];
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a6a68fd
